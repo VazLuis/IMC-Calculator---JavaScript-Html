@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>IMC</title>
+  <style>
+
+    hr {
+      width: 40%;
+    }
+    footer a {
+      font-size: 30px;
+      color: black;
+    }
+      .centro {
+          font-size: 25px;
+          text-decoration: underline;
+      }
+      input {
+          font-size: 20px;
+          border-style: double;
+          
+      }
+      body {
+          background-image: url(fundo.png);
+      }
+      section h1 {
+          font-size: 45px;
+          text-decoration: underline;
+          
+      }
+      .resultado {
+          font-size: 40px;
+          font-family: 'Courier New', Courier, monospace;
+      }
+      .table {
+          font-size: 25px;
+          text-align: center;
+          border-color: black;
+      }
+      button {
+          background-color: green;
+          border-radius: 5px;
+          border-style: double;
+          font-family: 'Courier New', Courier, monospace;
+          color: black;
+          text-decoration: underline;
+          font-size: 15px;
+      }
+  </style>
+  <script src="soma.js"></script>
+</head>
+<body>
+  <center>
+  <h1>
+  Luis Henrique Oliveira Vaz de souza <br>
+  Ra:N9425A-6
+  Turma: SIQ68
+</h1>
+<hr>
+   </center> 
+   <section>
+        <center>
+            <h1>Calculo IMC</h1>
+          <div class="centro">
+              Peso:
+              <input class="peso" type="number" ><br>
+              <br>
+              Altura (m):
+              <input class="altura" type="number"><br>
+              <p style="font-size: 15px;">Utilizar ponto na casa decimal</p>
+              <br>
+              <button onclick="clicar ()"><b>Resultado</b></button>
+              <p class="resultado"></p>
+
+
+          </div>
+        </center>
+    </section>
+    <br>
+    <br>
+    <div class="table">
+        <center>
+        <table border="4">
+            <tr> 
+                <td>IMC</td>
+                <td>Categoria</td>
+          </tr>
+              <tr>
+                <td>abaixo de 16,00</td>
+                <td>Baixo peso Grau III</td>
+              </tr>
+              <tr>
+                <td>16,00 a 16,99</td>
+                <td>Baixo peso Grau II</td>
+              </tr>
+              <tr> 
+                <td>17,00 a 18.49</td>
+                <td>Baixo peso Grau I</td>
+              </tr>
+              <tr> 
+                <td>18,50 a 24,99</td>
+                <td>Peso ideal</td>
+              </tr>
+              <tr> 
+                <td>25,00 a 29,99</td>
+                <td>Sobrepeso</td>
+              </tr>
+              <tr> 
+                <td>30,00 a 34,99</td>
+                <td>Obesidade Grau I</td>
+              </tr>
+              <tr> 
+                <td>35,00 a 39,99</td>
+                <td>Obesidade Grau II</td>
+              </tr>
+              <tr>
+                <td>40,0 e acima</td>
+                <td>Obesidade Grau III</td>
+              </tr>
+        </table>
+        <br><br><br>
+        <hr>
+        <br>
+    </center>
+    </div>
+    <footer>
+      <center>
+        
+        <a href="https://arquivos.sbn.org.br/equacoes/eq5.htm" target="_blank">Referência</a>
+      </center>
+    </footer>
+</body>
